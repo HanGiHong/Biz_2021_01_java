@@ -1,0 +1,11 @@
+eclipse를 사용한 java project 생성
+
+1. project 생성
+    가. new / java project
+    - project는 어플리케이션 이름
+    - 영문, 숫자 등을 조합하여 만듦
+
+2. package 생성
+    가. 프로젝트 생성 후 최초 package 생성
+    나. package명
+        회사의 

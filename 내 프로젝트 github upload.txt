@@ -1,0 +1,75 @@
+내 프로젝트 github upload
+
+1. github repository 생성
+    https://githun.com/HanGiHong 접속
+    New repository
+
+2. local 폴더 repository 선언
+ = local repository 만들기
+   local 폴더에서 git bash here 실행
+
+   git init
+
+3. config 설정
+= local repository와
+   remote repository의 권한, 보안 설장
+
+   git config -- local user.name HanGiHomg
+   git config -- local user.email dnjfdkch@naver.com
+
+4. remote 설정
+
+   upload 할 remote
+   repository 주소 별명 설정
+   git remote add origin https://github.com/HanGiHong/Biz_2021_01_403_java.git
+
+※ github 업로드 금지 설정
+ 로컬 폴더에 .gitignore 파일 생성 (윈도우에서는 .으로 시작되는 폴더를 만들 수 없음)
+ git bash에 touch .gitignore - .gitignore파일 생성
+
+ .gitignore 파일 실행 후
+  javawork 폴더에서 .metadata 클릭후 F2 클릭 후 ctrl + c
+  javahello 폴더에서 .settings 클릭 후 F2 클릭 후 ctrl + c
+  나머지는 타자로 입력
+ .gitignore 에 파일을 적용시킬때 되도록 띄어쓰기는 하지 않는다. 업로드 시 오류가 생길 수 있음.
+
+  -업로드 금지 목록-
+
+# 설정폴더
+.metadata/
+.settings/
+bin/
+
+# 자동 생성파일
+*.class
+*.jar
+*.war
+*.ear
+
+# 임시 생성파일
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# 가상머신 오류 로그
+hs_err_pid*
+
+# eclipse 임시 설정
+*.launch
+
+5. 파일 add
+
+   git add .
+   (git add . = 현재 폴더의 모든 파일, 폴더를 upload 하기 위해 압축하라)
+    (단, .gitignore에 설정되어 있는 파일은 제외)
+
+6. commit 설정
+   현재 시점에 업로드한 정보의
+   comment를 설정하는 것
+
+   git commit -m first
+
+7. push
+
+   git push -u origin master
