@@ -17,5 +17,5 @@
 5. 업로드 커멘트 설정
    git commit -m first
 
-5 입측된 로컬 폴더를 업로드
+5 압축된 로컬 폴더를 업로드
   git push -u origin master
