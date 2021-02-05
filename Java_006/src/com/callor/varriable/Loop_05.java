@@ -2,7 +2,7 @@ package com.callor.varriable;
 
 public class Loop_05 {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {SS
 		
 		int intDan = 7;
 		for(int num = 1; num < 10; num += 1) {
