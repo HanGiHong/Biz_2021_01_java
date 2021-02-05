@@ -33,9 +33,11 @@ public class Loop_02 {
 		}
 		
 		
-			System.out.println(i);
+			System.out.println(i);{
+				
+			}
 		
 		
-		}
-}
+		
+
 
