@@ -37,7 +37,7 @@ public class Loop_02 {
 				
 			}
 		
+		}	
 		
-		
-
-
+	}
+}
