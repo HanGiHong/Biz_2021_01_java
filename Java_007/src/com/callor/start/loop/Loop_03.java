@@ -1,13 +1,12 @@
 package com.callor.start.loop;
 
 public class Loop_03 {
-	
+
 	public static void main(String args[]) {
-	
-		
-		//main() method (loacl) scope 변수
-		int intSum = 0;		
-		for(int i = 0 ; i < 10 ; i++) {
+
+		// main() method (loacl) scope 변수
+		int intSum = 0;
+		for (int i = 0; i < 10; i++) {
 			// main()method scope 변수인
 			// intSum은 for()반복문 내에서
 			// 자유롭게 읽기 저장이 가능
@@ -21,18 +20,17 @@ public class Loop_03 {
 		System.out.println("==============");
 		System.out.println("intSum = " + intSum);
 		System.out.println("==============");
-		
-		//이미 선언되어 사용중인 변수를 clear
+
+		// 이미 선언되어 사용중인 변수를 clear
 		intSum = 0;
-		for(int i = 0 ; i < 10 ; i++) {
-			
+		for (int i = 0; i < 10; i++) {
+
 			int num1 = i + 1;
 			intSum += num1;
-			
+
 		}
 		System.out.println("1 ~ 10까지 덧셈 :" + intSum);
-		
+
 	}
-	
 
 }

@@ -1,6 +1,6 @@
-package com.callor.start;
+package com.callor.start.Multiple;
 
-public class Multiple_01 {
+public class Multiple_001 {
 
 	public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package com.callor.start;
+package com.callor.start.Multiple;
 
 public class Multiple_02 {
 	
