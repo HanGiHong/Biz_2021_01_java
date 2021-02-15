@@ -11,16 +11,14 @@ public class App_09 {
 		MyGuGuDan myDan = new MyGuGuDan();
 		Scanner scan = new Scanner(System.in);
 
-		System.out.print("숫자 ( 2 ~ 9 ) >> ");
+		System.out.print("숫자 (2 ~ 9) >> ");
 		int num = scan.nextInt();
 
 		if (num < 2 || num > 9) {
-			System.out.println("왜 자꾸 장난치니!");
+			System.out.println("왜 자꾸 장난치니!!!");
 		} else {
 			myDan.print(num);
 		}
-
-		myDan.print(num);
 
 	}
 

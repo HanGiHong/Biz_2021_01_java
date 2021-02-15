@@ -1,14 +1,14 @@
 package com.callor.applocations;
 
 import com.callor.applocations.myclass.MyGuGuDan;
-import com.callor.applocations.myclass.MyGuGu_05;
+import com.callor.applocations.myclass.MyGuGuWhile;
 
 public class App_06 {
 
-	public void main() {
+	public static void main(String[] args) {
 
-		MyGuGu_05 myGu = new MyGuGu_05();
-		((MyGuGu_05) myGu).gugu();
+		MyGuGuWhile myGu = new MyGuGuWhile();
+		myGu.gugu();
+
 	}
-
 }

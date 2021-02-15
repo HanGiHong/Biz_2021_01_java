@@ -19,39 +19,26 @@ public class MyGuGuDan {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("숫자입력 (2 ~ 9,-1:Quit ) >> ");
 		int num = scan.nextInt();
+	}// gugend
 
-		if (num < 0) {
-			System.out.print("Game Over!!!");
-			break;
-		}
+	// print() method는 변수 선언명령문을 포함하고 있다
+	// 누군가가 MyGuGuDan.print()를 호출(실행)하려면
+	// 반드시 정수값을 하나 포함시켜줘야 한다.
+	// MyGuGuDan.print(정수) 이런식으로 호출해야 한다.
+	// () 안에 포함되는 값을 arguments라고 한다
+	public void print(int dan) {
 
-		System.out.println("===================");
-		System.out.println("구구단" + num + "단");
-		System.out.println("===================");
-
+		System.out.println("====================");
+		System.out.println("구구단 " + dan + " 단");
+		System.out.println("--------------------");
 		for (int i = 0; i < 8; i++) {
-
 			int num2 = i + 2;
-			System.out.print(num);
-			System.out.print(" X ");
+			System.out.print(dan);
+			System.out.print(" x ");
 			System.out.print(num2);
 			System.out.print(" = ");
-			System.out.println(num * num2);
+			System.out.println(dan * num2);
 		}
-	} // gugu () end
-
-	public void print(int num) {
-		// TODO Auto-generated method stub
-
 	}
 
-	public void print1(int num) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void print11(int num) {
-		// TODO Auto-generated method stub
-
-	}
 }

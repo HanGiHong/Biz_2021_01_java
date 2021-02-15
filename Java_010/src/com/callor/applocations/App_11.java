@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import com.callor.applocations.myclass.MyGuGuDan;
 
-public class App_10 {
+public class App_11 {
 
 	public static void main(String[] args) {
 
@@ -13,8 +13,13 @@ public class App_10 {
 
 		while (true) {
 
-			System.out.print("숫자(2 ~ 9) >> ");
+			System.out.print("숫자(2 ~ 9,-1:Quit) >> ");
 			int num = scan.nextInt();
+
+			if (num < 0) {
+				System.out.println("Game Over!!!");
+				break;
+			}
 
 			if (num < 2 || num > 10) {
 				System.out.println("어허 그게아니야!!");

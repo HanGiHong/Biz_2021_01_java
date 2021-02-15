@@ -1,5 +1,6 @@
 package com.callor.applocations;
 
+import java.util.Random;
 import java.util.Scanner;
 
 import com.callor.applocations.myclass.MyGuGuDan;
@@ -7,31 +8,31 @@ import com.callor.applocations.myclass.MyGuGuDan;
 public class App_07 {
 
 	public static void main(String[] args) {
-		
-		MyGuGuDan myGu = new My GuGuDan();
-		
+
+		MyGuGuDan myGu = new MyGuGuDan();
 		/*
 		 * MyGuGuDan 클래스에 정의된 print() method 호출
-		 *    
-		 * MyGuGuDan  클래스에 print() method 호춯
 		 * 
-		 *  //정수형 값을 넣어라
-		 * print(int) ... arguments() 
-		 * =>
+		 * MyGuGuDan 클래스의 print() method 호출
+		 * 
+		 * print(int) ... arguments () =>
 		 */
-		myGu. print(0);		
-		
+		myGu.print(555);
+
 		Random rnd = new Random();
-		//Random 클래스에
-		//  nextInt() method를 호출하라
-		rnd.nextInt(10); //호출하면서 정수 10을 주입
-		rnd.nextInt();   //그냥 호출만 하라
-		
+		// Random 클래스의
+		// nextInt() method를 호출하라
+		rnd.nextInt(10); // 호출하면서 정수 10을 주입
+		rnd.nextInt(); // 그냥 호출만하라
+
 		Scanner scan = new Scanner(System.in);
+		// Scanner 클래스의
+		// nextInt() method를 호출하라
 		scan.nextInt();
-		
+
 		Random rd = new Random();
 		rd.nextInt(100);
+
 	}
 
 }
