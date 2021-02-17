@@ -8,6 +8,6 @@ public class Score_02 {
 		
 		ScoreService scService = new ScoreService(); // ctrl + shift + O(English)
 		
-		scService.score();
+		scService.Score();
 	}
 }

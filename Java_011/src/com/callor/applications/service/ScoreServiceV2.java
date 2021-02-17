@@ -46,11 +46,11 @@ public class ScoreServiceV2 {
 		int intSum = intKor + intEng + intMath;
 		System.out.print(intSum);
 	}
-	
+
 	public void sum() {
 		System.out.print("3개의 매개변수가 필요");
 	}
-	
+
 	public void sum(int num1, int num2, int num3, int num4) {
 		System.out.print("매개변수는 3개만...");
 	}
