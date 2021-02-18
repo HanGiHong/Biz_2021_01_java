@@ -15,14 +15,12 @@ import java.util.Scanner;
  */
 
 public class ScoreService {
-	
+
 	/*
-	 * 클래스와 메서드(메소드, method)의 명명법
-	 * 클래스 : 첫글자 영문대문자, 이후 영문대소문자 숫자
-	 * 메서드 : 첫글자 영문소문자, 이후 영문대소문자 숫자
+	 * 클래스와 메서드(메소드, method)의 명명법 클래스 : 첫글자 영문대문자, 이후 영문대소문자 숫자 메서드 : 첫글자 영문소문자, 이후
+	 * 영문대소문자 숫자
 	 * 
-	 * 클래스 명명법 (Upper) CamelCaes 라고 한다.
-	 * 메서드 명명볍 (Lower) CamelCaes 라고 한다.
+	 * 클래스 명명법 (Upper) CamelCaes 라고 한다. 메서드 명명볍 (Lower) CamelCaes 라고 한다.
 	 */
 
 	public static void main(String[] args) {
@@ -56,7 +54,6 @@ public class ScoreService {
 
 		fAvg = intSum / 3.0f;
 		fAvg = intSum / (float) 3;
-		
 
 		System.out.print(intKor + "\t");
 		System.out.println(fAvg);
