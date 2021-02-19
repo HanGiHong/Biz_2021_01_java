@@ -14,6 +14,7 @@ public class Multiple_01 {
 			boolean bYes = num % 3 == 0;
 			// if(bYes == true)
 			// if(num % 3 == 0 )
+
 			if (bYes) {
 				int3M += num;
 				System.out.println(num + "는 3의 배수");
