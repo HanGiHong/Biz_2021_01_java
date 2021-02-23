@@ -1,6 +1,7 @@
 package com.callor.applications;
 
 import java.util.Scanner;
+
 /*
  * 학생 3명의 국어, 영어, 수학 점수를
  * (학생명의 과목점수를 저장할 배열을 선언)
@@ -16,7 +17,6 @@ import java.util.Scanner;
  * 
  */
 public class Score_01 {
-
 
 	public static void main(String[] args) {
 
@@ -79,7 +79,7 @@ public class Score_01 {
 			System.out.println("==============================");
 			System.out.println("국어\t영어\t수학");
 			System.out.println("------------------------------");
-			for(int i= 0 ; i < i.length ; i++ );		
+			for(int i = 0 ; i < i.length ; i++ );		
 			    System.out.printf("%d\t%d\t%d\n",
 					intKor[i],
 					intEng[i],
@@ -89,7 +89,5 @@ public class Score_01 {
 		
 
 	}
-  
 
-	}
 }

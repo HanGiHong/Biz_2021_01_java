@@ -10,11 +10,12 @@ public class Numbers_03 {
 		// 1 ~ 45까지 정수를 저장
 
 		int[] intNums = new int[45];
+
 		for (int i = 0; i < intNums.length; i++) {
 			intNums[i] = i + 1;
 		}
 		for (int i = 0; i < intNums.length; i++) {
-			System.out.print();
+			System.out.print(intNums[i] + ",  ");
 		}
 
 		Random rnd = new Random();
