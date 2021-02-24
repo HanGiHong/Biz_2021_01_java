@@ -25,13 +25,12 @@ public class HomeWork_01 {
 		Random rnd = new Random();
 
 		// 임의의 정수 100개 선언
-		int[] intNum = new int[100];
+		int[] Num = new int[100];
 
-		
-		for (int i = 0; i < intNum.length; i++) {
+		for (int i = 0; i < Num.length; i++) {
 
 			// 1 ~ 1000까지 정수중 100까지의 임의의 랜덤한 정수가 저장
-			intNum[i] = rnd.nextInt(1000) + 1;
+			Num[i] = rnd.nextInt(200) + 2;
 
 		}
 
@@ -41,15 +40,17 @@ public class HomeWork_01 {
 		int sum = 0;
 
 		// i값이 임의의 정수보다 작을 경우 1+ 한다.
-		for (int i = 0; i < intNum.length; i++) {
+		for (int i = 0; i < Num.length; i++) {
 
-			//결과값은 
-			int result = psV2.prime(intNum[i]);
+			// 결과값은 PrimeServiceV2 패키지에 있는 입력값과 같다
+			int result = psV2.prime(Num[i]);
 
-			
-			if (result > 1) {
-				System.out.println(intNum[i] + "는 소수");
-				sum += intNum[i];
+			// 만일 결과값이 0보다 작을경우
+			if (result < 0) {
+
+				System.out.println(Num[i] + "는 소수");
+				// 결과값으로 나온 100가지의 소수들이 전부 더해진다.
+				sum += Num[i];
 			}
 		}
 
