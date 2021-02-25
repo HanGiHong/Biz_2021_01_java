@@ -45,9 +45,9 @@ public class HomeWork_01 {
 			// 결과값은 PrimeServiceV2 패키지에 있는 입력값과 같다
 			int result = psV2.prime(Num[i]);
 
-			// 만일 결과값이 0보다 작을경우
+			// 만일 결과값이 0보다 클경우
 			if (result < 0) {
-
+				
 				System.out.println(Num[i] + "는 소수");
 				// 결과값으로 나온 100가지의 소수들이 전부 더해진다.
 				sum += Num[i];
