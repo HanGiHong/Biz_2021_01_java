@@ -39,7 +39,6 @@ public class ScoreVO {
 
 	public String strName;
 	private int intKor = -1;
-	public int intEng;
 	private int intEng = -1;
 	public int intMath;
 

@@ -9,8 +9,6 @@ public class Exception_03 {
 		ProductVO pVO = null;
 		int[] intNums = new int[3];
 		try {
-			intNums[3] = 100;
-		} catch (ArrayIndexOutOfBoundsException e) {
 			intNums[2] = 100; // exception 처리 완료
 			intNums[2] = Integer.valueOf("3");
 			pVO.strDName = "야채참치";
@@ -23,4 +21,5 @@ public class Exception_03 {
 		}
 
 	}
+
 }

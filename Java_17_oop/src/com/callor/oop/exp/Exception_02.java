@@ -10,14 +10,12 @@ public class Exception_02 {
 
 		while (true) {
 
-			System.out.println("==============================");
+			System.out.println("===========================");
 			System.out.println("0 이상 정수를 입력하세요");
-			System.out.println("-------------------------------");
+			System.out.println("---------------------------");
 			System.out.print(">> ");
 			String strNum = scan.nextLine();
-
 			int intNum = 0;
-
 			try {
 				intNum = Integer.valueOf(strNum);
 			} catch (NumberFormatException e) {
@@ -26,12 +24,14 @@ public class Exception_02 {
 			}
 
 			if (intNum < 0) {
-				System.out.println(" 0 이상 값만 입력하세요");
+				System.out.println("0 이상 값만 입력하세요");
 			} else {
 				System.out.println("입력값 : " + intNum);
 				break;
 			}
+
 		}
+
 	}
 
 }

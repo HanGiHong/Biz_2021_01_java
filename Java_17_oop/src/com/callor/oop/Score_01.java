@@ -27,7 +27,8 @@ public class Score_01 {
 				String strKor = scan.nextLine();
 				try {
 					int intKor = Integer.valueOf(strKor);
-					scoreVO.intKor = intKor;
+					// scoreVO.intKor = intKor;
+					scoreVO.setIntKor(strKor);
 					break;
 				} catch (Exception e) {
 					System.out.println("국어점수는 숫자로만 입력");
