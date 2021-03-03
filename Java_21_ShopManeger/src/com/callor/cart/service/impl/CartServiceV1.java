@@ -104,6 +104,7 @@ public class CartServiceV1 implements CartService {
 		cartList.add(cartVO);
 
 	} // 1번을 입력했을 때 나오는 명령문 끝
+	
 
 	public void printCart() { // 2번을 입력했을 때 나오는 명령문 - 장바구니 전체리스트 보기 -
 
@@ -132,14 +133,14 @@ public class CartServiceV1 implements CartService {
 		System.out.println("구매자 이름 >> ");
 		String name = scan.nextLine();
 
-		System.out.println("*" + name + "의 장바구니 리스트");
+		System.out.println("*" + name + "의 장바구니 리스트"); //입력한 이름
 		System.out.println("==================================");
 		System.out.println("구매자이름\t상품명\t수량\t단가\t금액");
 		System.out.println("-------------------------------------");
 
 		int nSize = cartList.size();
 
-		int Sum = 0; // 총합을 0으로 초기화
+	
 
 		int i = 0; // 정수형 i를 0으로 초기화
 
@@ -151,12 +152,9 @@ public class CartServiceV1 implements CartService {
 				System.out.print(cartList.get(i).getQty() + "\t");
 				System.out.print(cartList.get(i).getPrice() + "\t");
 				System.out.print(cartList.get(i).getTotal() + "\n");
-				Sum += cartList.get(i).getTotal();
+		
 			}
 
-			System.out.println("-----------------------------------");
-			System.out.println("합계" + i + "가지\t\t" + Sum);
-			System.out.println("\n");
 
 		}
 	}// 3번을 입력했을 때 나오는 명령문 끝

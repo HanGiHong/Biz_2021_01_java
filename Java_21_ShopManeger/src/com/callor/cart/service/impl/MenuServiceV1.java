@@ -37,7 +37,7 @@ public class MenuServiceV1 implements MenuService {
 				
 				Integer intMenu = Integer.valueOf(strMenu);
 				
-				if(intMenu >= 1 && intMenu <= 3) { 
+				if(intMenu >= 1 && intMenu <= 3) {  
 					
 					return intMenu; //밑의 출력문을 출력하고 다시 리턴
 					

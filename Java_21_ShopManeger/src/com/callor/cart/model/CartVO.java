@@ -6,7 +6,6 @@ package com.callor.cart.model;
 
 public class CartVO {
 	
-	//클래스 파일을 만들어서 각각의 
 	
 	private String userName; //손님이름 
 	
