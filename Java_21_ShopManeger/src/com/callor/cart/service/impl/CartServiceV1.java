@@ -138,25 +138,14 @@ public class CartServiceV1 implements CartService {
 		System.out.println("구매자이름\t상품명\t수량\t단가\t금액");
 		System.out.println("-------------------------------------");
 
-		int nSize = cartList.size();
-
 	
 
-		int i = 0; // 정수형 i를 0으로 초기화
 
-		for (i = 0; i < nSize; i++) { // i가 nSize보다 작을경우 +1
-
-			if (cartList.get(i).getUserName().equals(name)) {
-				System.out.print(cartList.get(i).getUserName() + "\t");
-				System.out.print(cartList.get(i).getProName() + "\t");
-				System.out.print(cartList.get(i).getQty() + "\t");
-				System.out.print(cartList.get(i).getPrice() + "\t");
-				System.out.print(cartList.get(i).getTotal() + "\n");
 		
 			}
 
 
-		}
+		
 	}// 3번을 입력했을 때 나오는 명령문 끝
 
-}
+
