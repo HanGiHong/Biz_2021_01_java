@@ -5,21 +5,20 @@
 package com.callor.cart.model;
 
 public class CartVO {
-	
-	
-	private String userName; //손님이름 
-	
-	private String proName; //상품이름
-	
-	private String date; //추가날짜
-	
-	private String time; //추가시각
-	
-	private int Qty; //수량 (정수형)
-	
-	private int Price; //단가 (정수형)
-	
-	private int Total; //합계 (정수형)
+
+	private String userName; // 손님이름
+
+	private String proName; // 상품이름
+
+	private String date; // 추가날짜
+
+	private String time; // 추가시각
+
+	private int Qty; // 수량 (정수형)
+
+	private int Price; // 단가 (정수형)
+
+	private int Total; // 합계 (정수형)
 
 	public String getUserName() {
 		return userName;

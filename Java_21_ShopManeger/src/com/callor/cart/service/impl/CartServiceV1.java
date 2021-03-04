@@ -14,16 +14,16 @@ public class CartServiceV1 implements CartService {
 
 	private List<CartVO> cartList; // CartVO에 있는 인스턴스 변수를 가져와서 리스트로 선언
 
-	private Scanner scan; // 스캐너 선언
+	private Scanner scan; // 스캐너 클래스를 사용해서 scan 객체를 선언
 
 	public CartServiceV1() { // CartServiceV1매서드 생성
 
-		cartList = new ArrayList<CartVO>(); // CartList,scan 값을 초기화
+		cartList = new ArrayList<CartVO>(); // CartList,scan 값을 초기화, 생성
 
 		scan = new Scanner(System.in);
 	}
 
-	public void inputCart() { // 1번을 입력했을 때 나오는 명령문으로 설정
+	public void inputCart() { // 1번을 입력했을 때 나오는 명령문으로 설정 - 장바구니 상품담기 -
 
 		System.out.println("=============================");
 		System.out.println("장바구니에 상품 추가");
@@ -41,13 +41,13 @@ public class CartServiceV1 implements CartService {
 
 			System.out.print("수량 입력 >> ");
 
-			String strQty = scan.nextLine();
+			String strQty = scan.nextLine(); //
 
 			try {
 
 				intQty = Integer.valueOf(strQty); // 문자열을 정수/ 실수를 정수로 바꿀때 Integer.valueOf() 사용
 
-				if (intQty < 1) { // 수량이 1보다 작을경우 밑의 출력문 출력
+				if (intQty < 1) { // 만일 수량이 1보다 작을경우 밑의 출력문 출력
 
 					System.out.println("수량은 1 이상 입력해주세요.");
 
@@ -104,11 +104,10 @@ public class CartServiceV1 implements CartService {
 		cartList.add(cartVO);
 
 	} // 1번을 입력했을 때 나오는 명령문 끝
-	
 
 	public void printCart() { // 2번을 입력했을 때 나오는 명령문 - 장바구니 전체리스트 보기 -
 
-		int nSize = cartList.size();
+		int nSize = cartList.size(); // 1. 장바구니 상품담기에 작성했던 입력값
 
 		System.out.println("========================================================");
 		System.out.println("구매자이름\t상품명\t수량\t단가\t금액");
@@ -133,19 +132,37 @@ public class CartServiceV1 implements CartService {
 		System.out.println("구매자 이름 >> ");
 		String name = scan.nextLine();
 
-		System.out.println("*" + name + "의 장바구니 리스트"); //입력한 이름
+		int nSize = cartList.size(); // 1. 장바구니 상품담기에 작성했던 입력값
+
+		int sum = 0;
+
+		int i = 0; // for을 밖으로 빼줘야 사용가능
+
+		System.out.println("*" + name + "의 장바구니 리스트"); // 입력한 이름
 		System.out.println("==================================");
 		System.out.println("구매자이름\t상품명\t수량\t단가\t금액");
 		System.out.println("-------------------------------------");
 
-	
+		for (i = 0; i < nSize; i++) {
+			// cartList의 get i 번째 getUserName()과 equals를 통해 입력한 name과 비교
+			if (cartList.get(i).getUserName().equals(name)) {
+				System.out.print(cartList.get(i).getUserName() + "\t\t");
+				System.out.print(cartList.get(i).getProName() + "\t");
+				System.out.print(cartList.get(i).getQty() + "\t");
+				System.out.print(cartList.get(i).getPrice() + "\t");
+				System.out.println(cartList.get(i).getTotal() + "\t");
+				sum += cartList.get(i).getTotal();
 
-
-		
+			} else { // 비교문이 다르면 아래 처럼 출력
+				System.out.println("-----------------------------------\n");
+				break;
+				// 해당되는 이름이 없으면 여기서 반복문 종료
 			}
+		}
 
+		System.out.println("-----------------------------------");
+		System.out.println("합계\t" + i + "가지\t\t\t" + sum + "\n");
 
-		
 	}// 3번을 입력했을 때 나오는 명령문 끝
 
-
+}

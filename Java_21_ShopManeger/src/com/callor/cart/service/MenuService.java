@@ -4,10 +4,4 @@ public interface MenuService {
 
 	public Integer Menu();
 
-
-
-	
-
-	
-
 }
