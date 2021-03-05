@@ -64,7 +64,7 @@ public class Numbers_01 {
 		}
 		// 배열에 저장된 값을 출력
 		for (int i = 0; i < intNums.length; i++) {
-			System.out.print(intNums[i] + ".");
+			System.out.print(intNums[i] + "." + "\n");
 		}
 
 	}

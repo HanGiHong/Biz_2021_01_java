@@ -1,14 +1,26 @@
 package com.callor.shop.model;
-
 public class CartVO {
 	
 	// CartVO vo = new CartVO();
-	// vo.userName = 값
+	// vo.userName = "값"
 	private String userName;
 	private String productName;
 	private int qty;
 	private int price;
 	private int total;
+
+	// 매개변수가 있는 생성자를 만들게 되면
+	// 매개변수가 없는 "기본생성자"를 반드시 만들어 줘야 한다
+	public CartVO() {
+	}
+
+	public CartVO(String userName, String pName, int qty, int price) {
+		this.userName = userName;
+		this.productName = pName;
+		this.qty = qty;
+		this.price = price;
+	}
+
 	public String getUserName() {
 		return userName;
 	}
@@ -41,8 +53,10 @@ public class CartVO {
 	}
 	@Override
 	public String toString() {
-		return "cartVO [userName=" + userName + ", productName=" + productName + ", qty=" + qty + ", price=" + price
+		return "CartVO [userName=" + userName + ", productName=" + productName + ", qty=" + qty + ", price=" + price
 				+ ", total=" + total + "]";
 	}
-
+	
+	
+	
 }
