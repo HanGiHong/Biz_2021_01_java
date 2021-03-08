@@ -1,25 +1,23 @@
 package com.callor.score.model;
 
 public class ScoreVO {
-	
+
 	private String num;
 	private int kor;
 	private int eng;
 	private int math;
 	private int music;
 	private int history;
-	
+
 	private int total;
 	private float avg;
-	
-	
-	// super class Contructor
+
 	// 슈퍼 생성자
+	// 기본 생성자
 	public ScoreVO() {
-	
-		
+
 	}
-	// field Contructor
+
 	// 매개변수가 있는 생성자
 	// 필드 생성자
 	public ScoreVO(String num, int kor, int eng, int math, int music, int history) {
@@ -31,8 +29,7 @@ public class ScoreVO {
 		this.music = music;
 		this.history = history;
 	}
-	
-	
+
 	public String getNum() {
 		return num;
 	}
@@ -81,12 +78,12 @@ public class ScoreVO {
 	public void setAvg(float avg) {
 		this.avg = avg;
 	}
+
 	@Override
 	public String toString() {
 		return "ScoreVO [num=" + num + ", kor=" + kor + ", eng=" + eng + ", math=" + math + ", music=" + music
 				+ ", history=" + history + ", total=" + total + ", avg=" + avg + "]";
 	}
-	
-	
 
-}
+
+}// class end
