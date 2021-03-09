@@ -3,15 +3,15 @@ package com.callor.list.model;
 public class ListVO {
 	
 	
-	private int num1; //거래일자
+	private int num1; //거래일자 1
 	
-	private String name1; //상품명
-	private String name2; //거래처 명
+	private String name1; //상품명 3
+	private String name2; //거래처 명2
 	private String name3; //대표자 명	
 	
 	private int num2; //구분
-	private int num3; //매입단가
-	private int num4; //판매단가
+	private int num3; //매입단가 4
+	private int num4; //판매단가 5
 	private int num5; //수량 
 	
 	
@@ -32,6 +32,13 @@ public class ListVO {
 	
 
 	
+	public ListVO(String string, Integer valueOf, Integer valueOf2, Integer valueOf3, Integer valueOf4,
+			Integer valueOf5) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public int getNum1() {
 		return num1;
 	}

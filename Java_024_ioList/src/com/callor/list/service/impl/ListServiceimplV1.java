@@ -27,7 +27,6 @@ public class ListServiceimplV1 implements ListService{
 	
 	public void loadListFromFile() {
 
-		
 		listlist.removeAll(listlist);
 		
 		FileReader fileReader = null;
@@ -35,38 +34,50 @@ public class ListServiceimplV1 implements ListService{
 		
 		try {
 			fileReader = new FileReader(fileName);
+			
 			buffer = new BufferedReader(fileReader);
+			
 			while(true) {
 				
 				String reader = buffer.readLine();
+				
 				if(reader == null) {
+					
 					break;
 				}
+							
 				
 				String list[] = reader.split(":");
 				
-				ListVO vo = new ListVO(
-						lists[0],
-						Integer.valueOf(lists[1]),
-						Integer.valueOf(lists[2]),
-						Integer.valueOf(lists[3]),
-						Integer.valueOf(lists[4]),
-						Integer.valueOf(lists[5]));
-						
+				ListVO vo =  new ListVO(list[0], 
+						Integer.valueOf(list[1]),
+						Integer.valueOf(list[2]),
+						Integer.valueOf(list[3]),
+						Integer.valueOf(list[4]),
+						Integer.valueOf(list[5]));			
+				
 			}
+			
 			buffer.close();
 			fileReader.close();
 			
 			
 		} catch(FileNotFoundException e) {
+			
 			System.out.println("fileName + 파일이 없습니다");
+			
 		} catch(IOException e ) {
+			
 			e.printStackTrace();
+			
 		}System.out.println("파일을 읽는 동안 문제 발생");
 		
 
 	this.printList();
+	
+	
 }
+	
 
 	private void printList() {
 		
@@ -75,10 +86,14 @@ public class ListServiceimplV1 implements ListService{
 		System.out.println(Values.sLine);
 			
 		for(ListVO vo : listlist) {
-			System.out.print(vo.getnum1() + "\t");
+			System.out.print(vo.getNum1() + "\t");
+			System.out.print(vo.getName2() + "\t");
+			System.out.print(vo.getName3() + "\t");
+			System.out.print(vo.getNum3() + "\t");
+			System.out.print(vo.getNum4() + "\n");
 			
 		}
-	
+		System.out.println(Values.dLine);
 		
 		
 	}

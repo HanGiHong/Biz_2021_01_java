@@ -12,6 +12,7 @@ public class Sort_04 {
 	public static void main(String[] args) {
 		
 		List<ScoreVO> scoreList  = new ArrayList<ScoreVO>();
+		
 		Random rnd = new Random();
 		
 		for(int i = 0 ; i < 10 ; i++) {
