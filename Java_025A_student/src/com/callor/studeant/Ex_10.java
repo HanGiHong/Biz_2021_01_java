@@ -17,23 +17,21 @@ package com.callor.studeant;
  * 
  */
 public class Ex_10 {
-	
+
 	public static void main(String[] args) {
-		
+
 		int dan = 7;
 		System.out.println("====================");
 		System.out.println("구구단 " + dan + " 단");
 		System.out.println("--------------------");
 		for (int i = 0; i < 8; i++) {
-			int num2 = i + 2;
+			int num2 = i + 1;
 			System.out.print(dan);
 			System.out.print(" x ");
 			System.out.print(num2);
 			System.out.print(" = ");
 			System.out.println(dan * num2);
-	}
-	
-	
+		}
 
 	}
 }
